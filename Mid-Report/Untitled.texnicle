@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>EA867103-52FC-4E7D-8BBC-135E02D3A846</UUID>
-        <nextObjectID>107</nextObjectID>
+        <nextObjectID>108</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -85,14 +85,17 @@
         <relationship name="project" type="1/1" destination="PROJECT" idrefs="z102"></relationship>
     </object>
     <object type="UISETTINGS" id="z104">
-        <attribute name="pdfviewscrollrect" type="string">{{0, 5.844214001626824e-13}, {619.99999999998408, 707.39635157543785}}</attribute>
+        <attribute name="showlogwarningitems" type="bool">0</attribute>
+        <attribute name="showloginfoitems" type="bool">0</attribute>
+        <attribute name="showlogerroritems" type="bool">1</attribute>
+        <attribute name="pdfviewscrollrect" type="string">{{0, 887.00497512430456}, {620, 707.39635157541534}}</attribute>
         <attribute name="showpdfthumbnails" type="bool">0</attribute>
         <attribute name="selectedcontrolstab" type="int16">0</attribute>
         <attribute name="maxoutlinedepth" type="int16">7</attribute>
         <attribute name="logoutputlevel" type="int16">0</attribute>
         <attribute name="editorwidth" type="float">583</attribute>
         <attribute name="controlswidth" type="float">235</attribute>
-        <attribute name="consoleview" type="int16">0</attribute>
+        <attribute name="consoleview" type="int16">1</attribute>
         <relationship name="project" type="1/1" destination="PROJECT" idrefs="z102"></relationship>
     </object>
     <object type="FOLDER" id="z105">
@@ -106,12 +109,12 @@
     </object>
     <object type="TEXFILE" id="z106">
         <attribute name="wasopen" type="bool">0</attribute>
-        <attribute name="visiblerect" type="string">{{0, 143}, {546, 598}}</attribute>
-        <attribute name="lasteditdate" type="date">499409530.07200098037719726562</attribute>
+        <attribute name="visiblerect" type="string">{{0, 1827}, {561, 427}}</attribute>
+        <attribute name="lasteditdate" type="date">499415421.78952097892761230469</attribute>
         <attribute name="istext" type="bool">1</attribute>
-        <attribute name="fileloaddate" type="date">499409572.65905302762985229492</attribute>
+        <attribute name="fileloaddate" type="date">499415423.03507697582244873047</attribute>
         <attribute name="extension" type="string">tex</attribute>
-        <attribute name="cursor" type="string">{2360, 0}</attribute>
+        <attribute name="cursor" type="string">{6483, 0}</attribute>
         <attribute name="sortindex" type="int32">0</attribute>
         <attribute name="name" type="string">midreport.tex</attribute>
         <attribute name="isexpanded" type="bool">0</attribute>
@@ -130,5 +133,11 @@
         <relationship name="parent" type="1/1" destination="PROJECTITEM"></relationship>
         <relationship name="project" type="1/1" destination="PROJECT" idrefs="z102"></relationship>
         <relationship name="children" type="0/0" destination="PROJECTITEM"></relationship>
+    </object>
+    <object type="BOOKMARK" id="z108">
+        <attribute name="text" type="string">7.	The paper is well written and organized with nice flow of information for readers.
+</attribute>
+        <attribute name="linenumber" type="int64">50</attribute>
+        <relationship name="parentfile" type="1/1" destination="FILE"></relationship>
     </object>
 </database>

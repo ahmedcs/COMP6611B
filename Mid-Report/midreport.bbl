@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+
+\bibitem{Zaharia2012}
+Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma, Murphy
+  McCauley, Michael~J. Franklin, Scott Shenker, and Ion Stoica.
+\newblock Resilient distributed datasets: A fault-tolerant abstraction for
+  in-memory cluster computing.
+\newblock In {\em Proceedings of the 9th USENIX Conference on Networked Systems
+  Design and Implementation}, NSDI'12, pages 2--2, Berkeley, CA, USA, 2012.
+  USENIX Association.
+
+\end{thebibliography}

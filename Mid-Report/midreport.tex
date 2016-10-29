@@ -18,6 +18,9 @@
     \usepackage{hyperref}       % to simplify the use of \href
 \fi 
 
+%\usepackage{minted} 
+\usepackage{listings}
+
 \title{Caching Opportunities in Spark Frameworks}
 \author{Ahmed M. Abdelmoniem and Byron Yi\\
 Department of Computer Science and Engineering\\
@@ -36,5 +39,28 @@ Clear Water Bay, Hong Kong\\
 \end{abstract}
 
 \section{Introduction}
-\subsection{Subsection}
+	Motivated by lack abstractions for leveraging distributed memory and means of storing intermediate results which would benefit majority of Batch processing applications. It was found that many of these applications like logistic regression and interactive data mining involve the reuse of similar intermediate results multiple times and performing almost same operations on them. Hence, they proposed storing these as in-memory JAVA objects to provide a resilient distributed dataset for such queries along with lineage feature for fault recovery. To this end, Apache Spark \cite{Zaharia2012} was proposed as a general purpose distributed data processing framework that provides fault tolerance through the concept of Resilient Distributed Dataset (RDD). An RDD is an immutable representation of a dataset that is either reliable by nature, i.e. stored in reliable external storage, or could be computed from the reliable datasets. Instead of storing the actual data, an RDD stores only its lineage information, i.e. the source of data and all transformations specified to compute the data. If any transformation fails under fault, Spark can recover by recomputing the dataset using its reliable ancestors. They also provided an API programming interface through Scala Language to ease the implementation of various programming models on top of Spark. The results are quite staggering and show impressive improvements over Hadoop framework. To summarise we were able to identify the following strength and weaknesses of Spark Framework.
+
+\subsection{Spark Strengths}
+We could identify the following strengths from Spark Framework which motivated our choice of seeking further improvement of its completion times.
+
+\begin{itemize}
+\item It complements and address a missing feature of the modern large dataset mining applications which is storing intermediate results.\item It provides an easy programming interface for faster adoption by many application developers and data analytics.\item It allows for efficient while less storage-wise costly alternative for fault recovery through leveraging lineage of job stages.\item RDDs are read-only meaning they can be written out in the background without any program pauses or read-write locking mechanisms. This is quite a promising feature for making any caching algorithm tractable.\item Spark was 20X and 40X faster than Hadoop for iterative and a real-world data analytics as well as it can scan 1 TB dataset with 5–7s latency.\item The framework has been evaluated in research (controlled environment) as well as in a real application deployment by Conviva Inc and Mobile Millennium Project.\end{itemize}
+	
+\section{Caching in Spark}
+
+A typical Spark program will construct the actions in an incremental way. The user will usually construct the first RDD using an external data source, usually from file systems or databases. A new RDD is constructed, either explicitly or implicitly, for each transformation applied to the existing RDDs. The Spark program will usually end with one or more actions that either prints out the results or stores the transformed data to external storage. All the RDDs will form a Directed Acyclic Graph (DAG) and the output vertices given by these actions will invoke the actual computation for all their RDD dependencies.
+
+However, the current implementation of Spark evaluates each action as a single Spark job. For Spark programs that contain multiple jobs, we can reduce the computation and storage overhead if the dependency graphs for different jobs share a common substructure. Intuitively, if an RDD is a dependency for multiple Spark jobs, it will be beneficial to avoid re-computation by caching the computed result after its first evaluation. Conversely, if an RDD is a dependency for only a single Spark job, its results will not be reused and its cache could be eliminated after computation to save the storage space.
+
+The following code snippet shows a possible caching optimisation opportunity in the execution of this job:
+
+\begin{lstlisting}
+ 
+val lines = spark.textFile("hdfs://...")val num_error_php = errors.filter(_.contains("php")).count()val num_error_mysql = errors.filter(_.contains("mysql")).count() val errors = lines.filter(_.startsWith("ERROR")) errors.cache() // 
+
+\end{lstlisting} 
+
+\bibliographystyle{plain}
+\bibliography{../reference}
 \end{document}  
