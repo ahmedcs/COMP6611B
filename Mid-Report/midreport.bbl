@@ -1,14 +1,13 @@
 \begin{thebibliography}{1}
 
 \bibitem{Wang:2013du}
-Guoping Wang and Chee-Yong Chan.
+G.~Wang and C.-Y. Chan.
 \newblock {Multi-query optimization in MapReduce framework}.
-\newblock {\em Proceedings of the VLDB Endowment}, 7(3):145--156, November
-  2013.
+\newblock {\em Proceedings of the VLDB Endowment}, 7(3):145--156, Nov. 2013.
 
 \bibitem{Zaharia2012}
-Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma, Murphy
-  McCauley, Michael~J. Franklin, Scott Shenker, and Ion Stoica.
+M.~Zaharia, M.~Chowdhury, T.~Das, A.~Dave, J.~Ma, M.~McCauley, M.~J. Franklin,
+  S.~Shenker, and I.~Stoica.
 \newblock Resilient distributed datasets: A fault-tolerant abstraction for
   in-memory cluster computing.
 \newblock In {\em Proceedings of the 9th USENIX Conference on Networked Systems
