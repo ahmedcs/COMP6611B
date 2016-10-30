@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{Wang:2013du}
+Guoping Wang and Chee-Yong Chan.
+\newblock {Multi-query optimization in MapReduce framework}.
+\newblock {\em Proceedings of the VLDB Endowment}, 7(3):145--156, November
+  2013.
+
 \bibitem{Zaharia2012}
 Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma, Murphy
   McCauley, Michael~J. Franklin, Scott Shenker, and Ion Stoica.

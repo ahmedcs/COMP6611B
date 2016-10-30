@@ -85,10 +85,10 @@
         <relationship name="project" type="1/1" destination="PROJECT" idrefs="z102"></relationship>
     </object>
     <object type="UISETTINGS" id="z104">
-        <attribute name="showlogwarningitems" type="bool">0</attribute>
-        <attribute name="showloginfoitems" type="bool">0</attribute>
+        <attribute name="showlogwarningitems" type="bool">1</attribute>
+        <attribute name="showloginfoitems" type="bool">1</attribute>
         <attribute name="showlogerroritems" type="bool">1</attribute>
-        <attribute name="pdfviewscrollrect" type="string">{{0, 1109.0945273631244}, {620, 707.39635157540965}}</attribute>
+        <attribute name="pdfviewscrollrect" type="string">{{0, 0}, {604, 689.03482587052008}}</attribute>
         <attribute name="showpdfthumbnails" type="bool">0</attribute>
         <attribute name="selectedcontrolstab" type="int16">0</attribute>
         <attribute name="maxoutlinedepth" type="int16">7</attribute>
@@ -109,12 +109,12 @@
     </object>
     <object type="TEXFILE" id="z106">
         <attribute name="wasopen" type="bool">0</attribute>
-        <attribute name="visiblerect" type="string">{{0, 2966}, {555, 427}}</attribute>
-        <attribute name="lasteditdate" type="date">499490321.43991500139236450195</attribute>
+        <attribute name="visiblerect" type="string">{{0, 3153}, {555, 427}}</attribute>
+        <attribute name="lasteditdate" type="date">499491523.73553901910781860352</attribute>
         <attribute name="istext" type="bool">1</attribute>
-        <attribute name="fileloaddate" type="date">499490331.38979697227478027344</attribute>
+        <attribute name="fileloaddate" type="date">499491524.49797397851943969727</attribute>
         <attribute name="extension" type="string">tex</attribute>
-        <attribute name="cursor" type="string">{9196, 0}</attribute>
+        <attribute name="cursor" type="string">{10040, 0}</attribute>
         <attribute name="sortindex" type="int32">0</attribute>
         <attribute name="name" type="string">midreport.tex</attribute>
         <attribute name="isexpanded" type="bool">0</attribute>

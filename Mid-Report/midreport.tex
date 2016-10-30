@@ -1,5 +1,7 @@
 
-\documentclass[11pt]{article}
+\documentclass[11.5pt]{article}
+
+\usepackage[a4paper,bindingoffset=0.2in, left=1in,right=1in,top=1in,bottom=1in,footskip=.25in]{geometry}
 
 \usepackage{ifpdf}
 \ifpdf 
@@ -35,11 +37,11 @@
 
 %\setlength\paperheight {11in}
 %\setlength\paperwidth {8.5in}
-\setlength{\textwidth}{6in}
-\setlength{\textheight}{8in}
-\setlength{\oddsidemargin}{.25in}
-\setlength{\evensidemargin}{.25in}
-\setlength{\headsep}{0in}
+%\setlength{\textwidth}{6in}
+%\setlength{\textheight}{8in}
+%\setlength{\oddsidemargin}{.25in}
+%\setlength{\evensidemargin}{.25in}
+%\setlength{\headsep}{0in}
 %\pagenumbering{arabic}
 
 \let\oldenumerate\enumerate
@@ -111,6 +113,7 @@ Note that the last two variables specify two independent Spark jobs. The line of
 The key observation from the aforementioned example is that each Spark RDD is represented as a immutable variable in the Scala program, either explicitly declared using val keyword or implicitly declared in the return value of chaining method calls. The dependency graph of all RDDs is isomorphic to the data flow graph of RDD variables, which is available at compile-time when constructing the abstract syntax tree for that program. Hence, a straightforward approach would be to analyze the out degrees of the data flow graph or RDD variables after pruning the non-action paths then there is a chance for the caching policy to be applied at this point. More complex cases involving control flow analysis, e.g. with if conditions and while/for loops, will also be investigated in this project.
 
 \section{Related Work}
+A number of recent works addressed this shortcoming of Spark Framework to improve the execution time and reduce resource usage to be able to pack more jobs within the cluster. \cite{Wang:2013du} proposed two new techniques for multi-job optimization targeting the MapReduce framework. A grouping technique to merge multiple jobs into a single job via sharing both the scan operation of input file and the communication of the common map output. And a materialization technique that share input/ouput through partial materialization of the map output of some jobs. They achieve this by constructing an optimal execution plan by partitioning jobs into groups and assign necessary processing to each group. 
 
 
 \bibliographystyle{plain}
