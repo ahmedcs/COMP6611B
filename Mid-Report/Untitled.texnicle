@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>EA867103-52FC-4E7D-8BBC-135E02D3A846</UUID>
-        <nextObjectID>108</nextObjectID>
+        <nextObjectID>109</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -68,7 +68,7 @@
         <relationship name="selected" type="1/1" destination="FILE" idrefs="z106"></relationship>
         <relationship name="settings" type="1/1" destination="SETTINGS" idrefs="z103"></relationship>
         <relationship name="uisettings" type="1/1" destination="UISETTINGS" idrefs="z104"></relationship>
-        <relationship name="items" type="0/0" destination="PROJECTITEM" idrefs="z107 z106 z105"></relationship>
+        <relationship name="items" type="0/0" destination="PROJECTITEM" idrefs="z109 z107 z105 z106"></relationship>
     </object>
     <object type="SETTINGS" id="z103">
         <attribute name="stoponerror" type="bool">1</attribute>
@@ -88,7 +88,7 @@
         <attribute name="showlogwarningitems" type="bool">0</attribute>
         <attribute name="showloginfoitems" type="bool">0</attribute>
         <attribute name="showlogerroritems" type="bool">1</attribute>
-        <attribute name="pdfviewscrollrect" type="string">{{0, 887.00497512430456}, {620, 707.39635157541534}}</attribute>
+        <attribute name="pdfviewscrollrect" type="string">{{0, 1109.0945273631244}, {620, 707.39635157540965}}</attribute>
         <attribute name="showpdfthumbnails" type="bool">0</attribute>
         <attribute name="selectedcontrolstab" type="int16">0</attribute>
         <attribute name="maxoutlinedepth" type="int16">7</attribute>
@@ -101,7 +101,7 @@
     <object type="FOLDER" id="z105">
         <attribute name="sortindex" type="int32">1</attribute>
         <attribute name="name" type="string">include</attribute>
-        <attribute name="isexpanded" type="bool">0</attribute>
+        <attribute name="isexpanded" type="bool">1</attribute>
         <attribute name="filepath" type="string">include</attribute>
         <relationship name="parent" type="1/1" destination="PROJECTITEM"></relationship>
         <relationship name="project" type="1/1" destination="PROJECT" idrefs="z102"></relationship>
@@ -109,12 +109,12 @@
     </object>
     <object type="TEXFILE" id="z106">
         <attribute name="wasopen" type="bool">0</attribute>
-        <attribute name="visiblerect" type="string">{{0, 1827}, {561, 427}}</attribute>
-        <attribute name="lasteditdate" type="date">499415421.78952097892761230469</attribute>
+        <attribute name="visiblerect" type="string">{{0, 2966}, {555, 427}}</attribute>
+        <attribute name="lasteditdate" type="date">499490321.43991500139236450195</attribute>
         <attribute name="istext" type="bool">1</attribute>
-        <attribute name="fileloaddate" type="date">499415423.03507697582244873047</attribute>
+        <attribute name="fileloaddate" type="date">499490331.38979697227478027344</attribute>
         <attribute name="extension" type="string">tex</attribute>
-        <attribute name="cursor" type="string">{6483, 0}</attribute>
+        <attribute name="cursor" type="string">{9196, 0}</attribute>
         <attribute name="sortindex" type="int32">0</attribute>
         <attribute name="name" type="string">midreport.tex</attribute>
         <attribute name="isexpanded" type="bool">0</attribute>
@@ -128,16 +128,32 @@
     <object type="FOLDER" id="z107">
         <attribute name="sortindex" type="int32">2</attribute>
         <attribute name="name" type="string">images</attribute>
-        <attribute name="isexpanded" type="bool">0</attribute>
+        <attribute name="isexpanded" type="bool">1</attribute>
         <attribute name="filepath" type="string">images</attribute>
         <relationship name="parent" type="1/1" destination="PROJECTITEM"></relationship>
         <relationship name="project" type="1/1" destination="PROJECT" idrefs="z102"></relationship>
-        <relationship name="children" type="0/0" destination="PROJECTITEM"></relationship>
+        <relationship name="children" type="0/0" destination="PROJECTITEM" idrefs="z109"></relationship>
     </object>
     <object type="BOOKMARK" id="z108">
         <attribute name="text" type="string">7.	The paper is well written and organized with nice flow of information for readers.
 </attribute>
         <attribute name="linenumber" type="int64">50</attribute>
         <relationship name="parentfile" type="1/1" destination="FILE"></relationship>
+    </object>
+    <object type="FILE" id="z109">
+        <attribute name="wasopen" type="bool">0</attribute>
+        <attribute name="lasteditdate" type="date">499489917.20158797502517700195</attribute>
+        <attribute name="istext" type="bool">1</attribute>
+        <attribute name="fileloaddate" type="date">499489917.20157599449157714844</attribute>
+        <attribute name="extension" type="string">pdf</attribute>
+        <attribute name="sortindex" type="int32">3</attribute>
+        <attribute name="name" type="string">1.pdf</attribute>
+        <attribute name="isexpanded" type="bool">0</attribute>
+        <attribute name="filepath" type="string">./images/1.pdf</attribute>
+        <relationship name="parent" type="1/1" destination="PROJECTITEM" idrefs="z107"></relationship>
+        <relationship name="project" type="1/1" destination="PROJECT" idrefs="z102"></relationship>
+        <relationship name="mainfileofproject" type="1/1" destination="PROJECT"></relationship>
+        <relationship name="children" type="0/0" destination="PROJECTITEM"></relationship>
+        <relationship name="bookmarks" type="0/0" destination="BOOKMARK"></relationship>
     </object>
 </database>
