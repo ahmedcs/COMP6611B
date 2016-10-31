@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.11)  30 OCT 2016 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.11)  30 OCT 2016 18:20
 entering extended mode
 **./midreport.tex
 (midreport.tex
@@ -444,11 +444,6 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 98.
-
-
-LaTeX Warning: Citation `Zaharia2012' on page \thepage  undefined on input line 98.
 
 [1{C:/Users/ahmed/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
@@ -459,28 +454,38 @@ File: images/1.JPEG Graphic file (type jpg)
 <use images/1.JPEG>
 Package pdftex.def Info: images/1.JPEG used on input line 138.
 (pdftex.def)             Requested size: 227.99927pt x 105.4914pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 147.
 
+Overfull \hbox (2.1784pt too wide) in paragraph at lines 147--148
+\T1/ptm/m/n/9 two new tech-niques for multi-job op-ti-miza-tion tar-get-ing the MapRe-
+ []
 
-LaTeX Warning: Citation `Wang:2013du' on page \thepage  undefined on input line 147.
-
-No file midreport.bbl.
-[2 <./images/1.JPEG>] (midreport.aux) ) 
+<images/2.jpeg, id=11, 461.47406pt x 346.29375pt>
+File: images/2.jpeg Graphic file (type jpg)
+ <use images/2.jpeg>
+Package pdftex.def Info: images/2.jpeg used on input line 151.
+(pdftex.def)             Requested size: 227.99927pt x 171.09096pt.
+ (midreport.bbl) [2 <./images/1.JPEG> <./images/2.jpeg>] (midreport.aux) ) 
 Here is how much of TeX's memory you used:
- 7655 strings out of 493334
- 119985 string characters out of 3139251
+ 7668 strings out of 493334
+ 120163 string characters out of 3139251
  277951 words of memory out of 3000000
- 11038 multiletter control sequences out of 15000+200000
- 49207 words of font info for 65 fonts, out of 3000000 for 9000
+ 11046 multiletter control sequences out of 15000+200000
+ 52055 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,11n,92p,1569b,971s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/u
-hvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmr8a.pfb>
-Output written on midreport.pdf (2 pages, 115387 bytes).
+ 53i,11n,92p,2116b,971s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/f
+ontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on midreport.pdf (2 pages, 264444 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=midreport.tex
 
 [Frame0_View0,0]
-TopLine=181
-Cursor=10622
+TopLine=198
+Cursor=10735
 
 [SessionInfo]
 FrameCount=1
