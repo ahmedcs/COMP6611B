@@ -1,5 +1,0 @@
-   val lines = spark.textFile("hdfs://...")
-val num_error_php = errors.filter(_.contains("php")).count()
-val num_error_mysql = errors.filter(_.contains("mysql")).count()
- val errors = lines.filter(_.startsWith("ERROR"))
- errors.cache() //

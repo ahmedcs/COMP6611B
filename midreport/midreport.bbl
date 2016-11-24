@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{Wang:2013du}
+G.~Wang and C.-Y. Chan.
+\newblock {Multi-query optimization in MapReduce framework}.
+\newblock {\em Proceedings of the VLDB Endowment}, 7(3):145--156, Nov. 2013.
+
+\bibitem{Zaharia2012}
+M.~Zaharia, M.~Chowdhury, T.~Das, A.~Dave, J.~Ma, M.~McCauley, M.~J. Franklin,
+  S.~Shenker, and I.~Stoica.
+\newblock Resilient distributed datasets: A fault-tolerant abstraction for
+  in-memory cluster computing.
+\newblock In {\em Proceedings of the 9th USENIX Conference on Networked Systems
+  Design and Implementation}, NSDI'12, pages 2--2, Berkeley, CA, USA, 2012.
+  USENIX Association.
+
+\end{thebibliography}
